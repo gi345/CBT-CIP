@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>BlogSphere</h1>
+        <nav>
+            <a href="login.html">Login</a>
+            <button id="theme-toggle">Toggle Dark Theme</button>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Blog Categories Filter -->
+        <section id="categories">
+            <label for="category-filter">Filter by Genre: </label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="tech">Tech</option>
+                <option value="lifestyle">Lifestyle</option>
+                <option value="travel">Travel</option>
+                <option value="education">Education</option>
+            </select>
+        </section>
+
+        <!-- Blog Posts -->
+        <section class="blog-posts">
+            <article class="blog-post" data-category="tech">
+                <h2>Tech Trends 2024</h2>
+                <p>In 2024, the tech landscape is evolving faster than ever, driven by advancements in AI, blockchain, and quantum computing.
+                     Artificial Intelligence continues to revolutionize industries with more sophisticated generative AI models, automating complex tasks in fields like healthcare, finance, and customer service. 
+                     The rise of AI-powered tools is reshaping how businesses approach data analysis, personalization, and automation. Blockchain technology is gaining traction beyond cryptocurrencies, offering secure, decentralized solutions in sectors like supply chain management, digital identity, and cybersecurity. Meanwhile, quantum computing is on the brink of breaking through traditional computing barriers, promising unparalleled computational power that could transform everything from drug discovery to cryptography. Additionally, 5G's expansion is enabling faster, more reliable internet connections, fueling innovations in IoT, autonomous vehicles, and smart cities. As sustainability becomes a critical focus, green tech and renewable energy innovations are reshaping how industries approach efficiency and carbon neutrality. These trends signal a future where technology plays an even more pivotal role in solving global challenges and shaping new opportunities.</p>
+                <div class="rating">
+                    <span>Rate this post:</span>
+                    <span class="stars">
+                        <span data-value="1">☆</span>
+                        <span data-value="2">☆</span>
+                        <span data-value="3">☆</span>
+                        <span data-value="4">☆</span>
+                        <span data-value="5">☆</span>
+                    </span>
+                    <p id="rating-output">Rating: 0/5</p>
+                </div>
+            </article>
+
+            <article class="blog-post" data-category="lifestyle">
+                <h2>Healthy Living Tips</h2>
+                <p>Adopting a healthy lifestyle is crucial for maintaining physical and mental well-being. 
+                    To start, prioritize a balanced diet rich in fruits, vegetables, lean proteins, and whole grains, which provide essential nutrients to keep your body energized and strong. 
+                    Staying hydrated is equally important—aim for at least eight glasses of water a day to support digestion, skin health, and overall vitality. 
+                    Regular physical activity, such as walking, cycling, or swimming, helps maintain cardiovascular health, boost mood, and manage weight. Aim for at least 30 minutes of moderate exercise most days of the week. Equally vital is quality sleep, as it allows your body to recover, reduce stress, and improve cognitive function. Strive for 7-9 hours of uninterrupted sleep each night. Managing stress through mindfulness practices, such as meditation or deep breathing exercises, can improve mental clarity and emotional balance. Also, prioritize self-care, whether it's spending time outdoors, engaging in hobbies, or connecting with loved ones. Reducing unhealthy habits like smoking, excessive alcohol consumption, and over-reliance on processed foods can significantly enhance long-term health. By consistently integrating these simple yet powerful habits into your daily routine, you can cultivate a healthier, more vibrant lifestyle that promotes longevity and overall happinnes
+                </p>
+                <div class="rating">
+                    <span>Rate this post:</span>
+                    <span class="stars">
+                        <span data-value="1">☆</span>
+                        <span data-value="2">☆</span>
+                        <span data-value="3">☆</span>
+                        <span data-value="4">☆</span>
+                        <span data-value="5">☆</span>
+                    </span>
+                    <p id="rating-output">Rating: 0/5</p>
+                </div>
+            </article>
+
+            <article class="blog-post" data-category="travel">
+                <h2>Top Travel Destinations</h2>
+                <p>In 2024, travel enthusiasts are exploring diverse destinations that offer unforgettable experiences. One of the top choices is Japan, a perfect blend of ancient culture and modern innovation. With its vibrant cities like Tokyo, serene temples in Kyoto, and scenic beauty of Mount Fuji, Japan continues to captivate travelers. Another must-visit destination is Iceland, known for its stunning landscapes, including volcanoes, glaciers, and the magical Northern Lights. Adventure seekers will find Iceland’s natural beauty unmatched, with opportunities for hiking, hot spring bathing, and whale watching.
+                    For a tropical escape, Bali, Indonesia, is a paradise with its beautiful beaches, lush jungles, and rich spiritual heritage. Bali’s yoga retreats, surf spots, and cultural landmarks like Uluwatu Temple make it an idyllic destination for relaxation and exploration. Italy remains a classic favorite, with cities like Rome, Florence, and Venice offering a mix of art, history, and world-class cuisine. From the Colosseum to the Tuscan countryside, Italy's charm is timeless.
+                    Lastly, New Zealand attracts nature lovers with its breathtaking landscapes, from the fjords of Milford Sound to the rolling hills seen in the "Lord of the Rings." These top destinations promise diverse and enriching experiences for every traveler.</p>
+                <div class="rating">
+                    <span>Rate this post:</span>
+                    <span class="stars">
+                        <span data-value="1">☆</span>
+                        <span data-value="2">☆</span>
+                        <span data-value="3">☆</span>
+                        <span data-value="4">☆</span>
+                        <span data-value="5">☆</span>
+                    </span>
+                    <p id="rating-output">Rating: 0/5</p>
+                </div>
+            </article>
+
+            <article class="blog-post" data-category="education">
+                <h2>Learning in Digitial Age</h2>
+                <p>In today’s fast-paced world, learning has transformed dramatically due to advancements in technology. The digital age has made education more accessible, flexible, and personalized. Online platforms and resources allow learners to access a vast array of knowledge from anywhere in the world, breaking down geographical barriers and fostering global collaboration.
+                   E-learning tools, such as interactive courses, webinars, and virtual classrooms, provide students with the opportunity to engage with content in diverse ways, catering to various learning styles. Moreover, the integration of artificial intelligence and machine learning in education helps tailor the learning experience to individual needs, promoting a deeper understanding of subjects.
+                     However, while the digital age offers immense opportunities, it also presents challenges. The overwhelming amount of information can lead to distraction, and the lack of face-to-face interaction may hinder the development of essential social skills. Therefore, it’s crucial to strike a balance between digital learning and traditional methods.
+                    Ultimately, embracing the benefits of technology while being mindful of its limitations can lead to a richer, more effective educational experience. In the digital age, learning is not just about acquiring knowledge but also about adapting to an ever-evolving landscape.
+                </p>
+                <div class="rating">
+                    <span>Rate this post:</span>
+                    <span class="stars">
+                        <span data-value="1">☆</span>
+                        <span data-value="2">☆</span>
+                        <span data-value="3">☆</span>
+                        <span data-value="4">☆</span>
+                        <span data-value="5">☆</span>
+                    </span>
+                    <p id="rating-output">Rating: 0/5</p>
+                </div>
+            </article>
+            
+            <article class="blog-post" data-category="education"></article>
+                <h2>Democary near India</h2>
+                <p> As India approaches the pivotal year of 2024, the state of its democracy is under keen observation. Established in 1947, India's democratic framework has evolved through various political, social, and economic changes. The upcoming general elections are expected to be fiercely contested, with political parties adapting strategies to engage younger voters, who now constitute a significant portion of the electorate. Social media's role in campaigning has transformed political engagement, though it also raises concerns about misinformation.
+                    Recent discourse on civil liberties is gaining traction, with activists advocating for transparency and accountability. The push for digital privacy laws reflects a growing awareness of protecting citizens’ rights in a digital age. However, socio-economic challenges like poverty and unemployment persist, emphasizing the need for inclusive growth and effective governance.
+                    Youth engagement in political movements has risen, showcasing a generation eager for change. Yet, challenges remain, such as political polarization and media censorship, which threaten democratic integrity.
+                    In this context, the resilience of Indian democracy will be tested. Citizen engagement, informed discourse, and active participation are crucial in shaping the nation’s future. As 2024 unfolds, every voice matters in this ongoing democratic journey, and it is imperative to foster dialogue and understanding to preserve the democratic values that unite India.</p>
+                <div class="rating">
+                    <span>Rate this post:</span>
+                    <span class="stars">
+                        <span data-value="1">☆</span>
+                        <span data-value="2">☆</span>
+                        <span data-value="3">☆</span>
+                        <span data-value="4">☆</span>
+                        <span data-value="5">☆</span>
+                    </span>
+                    <p id="rating-output">Rating: 0/5</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BlogSphere</p>
+    </footer>
+</body>
+</html>
